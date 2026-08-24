@@ -8,6 +8,24 @@ No build step, no framework, no bundler.
 
 ---
 
+## Live
+
+- **Site:** https://tayloredtransit.vercel.app
+- **Repo:** https://github.com/syncoretech01/tayloredtransit
+- **Vercel project:** `syncore-techs-projects/tayloredtransit`
+
+Deployed from the CLI (`vercel deploy --prod`). The repo is **not yet connected**
+to the Vercel project — the automatic connect failed because the Vercel GitHub
+App is not installed on the `syncoretech01` account, so pushing to `main` does
+**not** redeploy on its own. To enable auto-deploys: Vercel dashboard → the
+`tayloredtransit` project → Settings → Git → Connect, and authorise the GitHub
+App when prompted. Until then, redeploy with `vercel deploy --prod` from this
+directory.
+
+Deployment Protection (Vercel Authentication) was disabled on this project so the
+URL is publicly reachable. Re-enable it under Settings → Deployment Protection if
+you want the site private again.
+
 ## Running it
 
 ES modules and an import map are used, so it must be served over HTTP —
