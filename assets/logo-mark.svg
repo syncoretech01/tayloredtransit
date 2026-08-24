@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 140" role="img" aria-label="Taylored Transit mark">
+  <defs>
+    <linearGradient id="tt-steel" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6E819C"/>
+      <stop offset="55%" stop-color="#9FB2CA"/>
+      <stop offset="100%" stop-color="#C6D4E6"/>
+    </linearGradient>
+    <linearGradient id="tt-navy" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#12224C"/>
+      <stop offset="100%" stop-color="#0A1330"/>
+    </linearGradient>
+  </defs>
+  <!-- steel arrow sweep -->
+  <path d="M40 128 C74 124 104 108 132 76" fill="none" stroke="url(#tt-steel)" stroke-width="27" stroke-linecap="butt"/>
+  <path d="M116 92 L172 30 L160 104 Z" fill="url(#tt-steel)"/>
+  <path d="M116 92 L146 60 L140 96 Z" fill="#7A8DA8" opacity=".55"/>
+  <!-- navy T -->
+  <path d="M14 8 H150 V46 H106 V124 H58 V46 H14 Z" fill="url(#tt-navy)"/>
+</svg>
