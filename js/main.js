@@ -101,25 +101,13 @@ function preload(onDone){
   const pre = q('#preloader');
   const num = q('#preNum'), bar = q('#preBar'), lbl = q('#preLabel');
 
-  const words = qa('.pre__word span').flatMap(el => {
-    const text = el.textContent; el.textContent = '';
-    return [...text].map(ch => {
-      const sp = document.createElement('span');
-      sp.textContent = ch; sp.style.display = 'inline-block';
-      el.appendChild(sp); return sp;
-    });
-  });
-
   const stages = ['INITIALIZING', 'VERIFYING CARRIER AUTHORITY', 'LOADING NETWORK COVERAGE', 'READY'];
-  gsap.set(words, { yPercent: 115, opacity: 0 });
 
   const counter = { v: 0 };
   const tl = gsap.timeline({ onComplete(){ pre.style.display = 'none'; onDone(); } });
 
-  tl.to('.pre-arrow-line', { strokeDashoffset: 0, duration: .9, ease: 'power2.inOut' })
-    .to('.pre-arrow-head', { opacity: 1, duration: .4 }, '-=.3')
-    .to('.pre-t', { opacity: 1, duration: .5 }, '-=.35')
-    .to(words, { yPercent: 0, opacity: 1, duration: .8, stagger: .02, ease: 'expo.out' }, '-=.4')
+  tl.fromTo('.pre__logo', { opacity: 0, y: 16, scale: .97 },
+                          { opacity: 1, y: 0, scale: 1, duration: 1.1, ease: 'expo.out' })
     .to(counter, {
       v: 100, duration: 1.5, ease: 'power2.inOut',
       onUpdate(){

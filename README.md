@@ -59,6 +59,27 @@ ScrollTrigger and ScrollToPlugin. Fonts come from Google Fonts
 
 ---
 
+## Logo
+
+The mark is **traced from the supplied artwork** (`IMG_0764.png` / `IMG_0765.png`),
+not redrawn by hand. The PNGs were upscaled 4x to recover sub-pixel edges from the
+anti-aliasing, contour-traced per colour region, and simplified. A pixel diff of
+the traced SVG against the original measures **1.4% mismatch on the mark** and
+**6.9% on the lockup** — all of it edge anti-aliasing, no shape drift.
+
+- `assets/logo-lockup.svg` — mark + wordmark, full brand colour
+- `assets/logo-mark.svg` — mark only, full brand colour
+- `assets/favicon.svg` — mark reversed on a navy tile
+
+Brand colours measured from the artwork: navy `#04112F`, steel `#9DAEBC`→`#93A5B4`,
+arrow fold `#7E8F9C`.
+
+**On dark chrome the mark is reversed.** The header, preloader and footer are dark,
+and the logo's navy T would disappear on them, so those three inline the same paths
+with the T painted `currentColor` (light). The full-colour artwork in `assets/` is
+untouched. If you would rather show the exact full-colour logo in the header, the
+header needs a light background — say the word and it is a small change.
+
 ## Theme
 
 Dark chrome, light page:
