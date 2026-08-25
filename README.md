@@ -1,7 +1,7 @@
 # Taylored Transit — Website
 
 A single-page, animation-led marketing site for **Taylored Transit**, a specialized
-transportation company serving the bulk chemical and expedited freight markets.
+transportation company serving the bulk liquid and chemical industries.
 
 Built with vanilla HTML/CSS/JS + **Three.js** (WebGL) and **GSAP / ScrollTrigger**.
 No build step, no framework, no bundler.
@@ -87,7 +87,7 @@ photography — no stock imagery is bundled, and nothing loads from a third part
 - **Equipment cards** (`.spec`) are side elevations with a dimension line and
   callouts. Dimensions measure the **trailer or cargo box only** — a 53 ft van is
   the trailer, not the tractor-trailer combination. Capacities (7,000 gal DOT-407,
-  4,500 gal DOT-412, 6,340 gal ISO T11) are typical figures for each class and
+  4,500 gal DOT-412, 6,340 gal ISO T11, 6,000 gal sanitary) are typical figures for each class and
   should be confirmed against the equipment you actually book.
 - **Network cards** (`.map`) are node-and-route schematics. Cities sit in correct
   relative positions but the diagrams are deliberately abstract — graph paper and
