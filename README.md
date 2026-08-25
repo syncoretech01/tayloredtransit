@@ -107,8 +107,8 @@ photography — no stock imagery is bundled, and nothing loads from a third part
 
 - **Equipment cards** (`.spec`) are side elevations with a dimension line and
   callouts. Dimensions measure the **trailer or cargo box only** — a 53 ft van is
-  the trailer, not the tractor-trailer combination. Capacities (7,000 gal DOT-407,
-  4,500 gal DOT-412, 6,340 gal ISO T11, 6,000 gal sanitary) are typical figures for each class and
+  the trailer, not the tractor-trailer combination. Capacities (2,500–7,000 gal on the tanker
+  classes, 6,340 gal ISO T11) are typical figures for each class and
   should be confirmed against the equipment you actually book.
 - **Network cards** (`.map`) are node-and-route schematics. Cities sit in correct
   relative positions but the diagrams are deliberately abstract — graph paper and
@@ -163,7 +163,7 @@ ticker, full-screen mobile menu.
 
 These are placeholders and appear in more than one place:
 
-- **Phone** `+1 (800) 555-1234` — `index.html` (nav, quote section, footer, JSON-LD)
+- **Phone** `+1 (630) 222-6534` — set in `index.html` (nav, quote section, footer, JSON-LD)
 - **Email** `dispatch@tayloredtransit.com` — quote section, footer, JSON-LD
 - **Domain** `https://www.tayloredtransit.com/` — canonical + Open Graph tags
 - **Form submission** — `initForm()` in `js/main.js` currently simulates a send
