@@ -630,6 +630,7 @@ body.menu-open .nav__burger i:last-child{transform:translateY(-4px) rotate(-45de
   border-top:1px solid var(--dk-line);display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;color:var(--dk-text-2);
 }
 .foot__bar a:hover{color:var(--amber-bright)}
+.foot__sep{font-style:normal;opacity:.45;margin:0 .15em}
 
 /* ==========================================================================
    RESPONSIVE
